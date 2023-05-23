@@ -2,7 +2,7 @@ const fetch = require('node-fetch'); // import node-fetch (enables the fetch API
 const { Pool } = require('pg'); // import node-postgres
 
 const pool = new Pool({ // create connection to database
-  connectionString: process.env.DATABASE_URL,	// use DATABASE_URL environment variable from Heroku app 
+  connectionString: process.env.DATABASE_URL,	// use DATABASE_URL environment variable from Render app 
   ssl: {
     rejectUnauthorized: false // don't check for SSL cert
   }
