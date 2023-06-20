@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 const services = require('./services/requests')
 
-const PORT = process.env.PORT || 5000; // use either the host env var port (PORT) provided by Heroku or the local port (5000) on your machine
+const PORT = process.env.PORT || 5432; // use either the host env var port (PORT) provided by Render or the PostgreSQL port (5432) on your machine
 
 app.use(cors()); // Enable CORS 
 app.use(express.json()); // Recognize Request Objects as JSON objects
